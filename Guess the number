@@ -1,0 +1,17 @@
+Guess = 35
+no_of_guesses = 1
+print("You have only 5 lives :)")
+
+while no_of_guesses<=9:
+    guess = int(input("Enter the number\n"))
+    if guess > 35:
+        print("you have enter large number.Enter lesser number :)")
+    elif guess < 30:
+        print("You have enter less number. Enter large number :)")
+    elif guess> 30 and guess < 35:
+        print("You are close! Try again ")
+    else:
+        print("you won!:)")
+        break
+if no_of_guesses > 9:
+    print("Game over !")
